@@ -24,6 +24,9 @@ import { UseStateDemo1 } from "./components/UseStateDemo1";
 import { FunctionDemo1 } from "./components/FunctionDemo1";
 import { UseStateDemo2 } from "./components/UseStateDemo2";
 import { UseStateDemo3 } from "./components/UseStateDemo3";
+import  FormDemo1  from "./components/FormDemo1";
+import  FormDemo2  from "./components/tasks/FormDemo2";
+
 
 function App() {
   return (
@@ -42,7 +45,8 @@ function App() {
         <Route path="/*" element = {<ErrorNotFound/>}></Route>
         <Route path="/teamdetail/:name" element={<TeamDetail />}></Route>
         <Route path="/teams" element = {<Teams/>}></Route>
-        
+        <Route path="/formdemo1" element={<FormDemo1/>}></Route>
+        <Route path="/formdemo2" element={<FormDemo2/>}></Route>
 
       </Routes>
     </div>
