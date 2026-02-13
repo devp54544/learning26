@@ -14,6 +14,8 @@ import { Route, Routes } from "react-router-dom";
 import { NetflixHome } from "./components/NetflixHome";
 import { NetflixMovies } from "./components/NetflixMovies";
 import { NetflixShows } from "./components/NetflixShows";
+import NetflixSports from "./components/tasks/NetflixSports";
+import NetflixSparks from "./components/tasks/NetflixSparks";
 import { Navbar } from "./components/Navbar";
 import { HomeComponent } from "./components/HomeComponent";
 import { ErrorNotFound } from "./components/ErrorNotFound";
@@ -27,6 +29,8 @@ import { UseStateDemo3 } from "./components/UseStateDemo3";
 import InputDemo1  from "./components/InputDemo1";
 import InputDemo2  from "./components/tasks/InputDemo2";
 import InputDemo3 from "./components/tasks/InputDemo3";
+import Students from "./components/tasks/Students";
+import Teachers from "./components/tasks/Teachers";
 import Dropdown from "./components/tasks/DropDown";
 import FormDemo1 from "./components/Forms/FormDemo1";
 import FormDemo2 from "./components/Forms/FormDemo2";
@@ -45,6 +49,8 @@ function App() {
         <Route path="/netflixhome" element={<NetflixHome />}></Route>
         <Route path="/netflixmovies" element={<NetflixMovies />}></Route>
         <Route path="/netflixshows" element={<NetflixShows />}></Route>
+        <Route path="/netflixSports" element={<NetflixSports />}></Route>
+        <Route path="/netflixSparks" element={<NetflixSparks />}></Route>
         <Route path="/watch/:name" element={<Watch />}></Route>
         <Route path="/usestatedemo1" element ={<UseStateDemo1/>}></Route>
         <Route path="/usestatedemo2" element ={<UseStateDemo2/>}></Route>
@@ -55,6 +61,8 @@ function App() {
         <Route path="/inputdemo1" element={<InputDemo1/>}></Route>
         <Route path="/inputdemo2" element={<InputDemo2/>}></Route>
         <Route path="/inputdemo3" element={<InputDemo3 />}></Route>
+         <Route path="/students" element={<Students />}></Route>
+        <Route path="/teachers" element={<Teachers />}></Route>
         <Route path="/dropdown" element={<Dropdown/>}></Route>
         <Route path="/formdemo1" element={<FormDemo1 />}></Route>
         <Route path="/formdemo2" element={<FormDemo2 />}></Route>
