@@ -128,6 +128,11 @@ export const Navbar = () => {
                 ApiDemo3
               </Link>
             </li> 
+             <li class="nav-item">
+              <Link class="nav-link" to="/omdbapi">
+                OmdbApi
+              </Link>
+            </li>
           </ul>
         </div>
       </nav>

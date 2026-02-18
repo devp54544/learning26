@@ -44,8 +44,8 @@ import ComparePassword from "./components/Forms/ComparePassword";
 import ApiDemo1 from "./components/APIs/ApiDemo1";
 import ApiDemo2 from "./components/APIs/ApiDemo2";
 import ApiDemo3 from "./components/APIs/ApiDemo3";
-
-
+import OmdbApi from "./components/APIs/OmdbApi";
+import MovieDetail from "./components/APIs/MovieDetail";
 
 
 function App() {
@@ -83,7 +83,8 @@ function App() {
         <Route path="/apidemo1" element={<ApiDemo1/>}></Route>
         <Route path="/apidemo2" element={<ApiDemo2/>}></Route>
         <Route path="/apidemo3" element={<ApiDemo3/>}></Route>
-        
+        <Route path="/omdbapi" element={<OmdbApi/>}></Route>
+        <Route path="/moviedetail/:imdbID" element={<MovieDetail/>}></Route>
         
         
         <Route path="/" element = {<HomeComponent/>}></Route>
